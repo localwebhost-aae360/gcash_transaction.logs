@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Button with Flower Design</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* Space between button and flower */
+      align-items: center;
+      height: 100vh;
+    }
+    a {
+      text-decoration: none;
+    }
+    .neon-button {
+      margin-top: 150px;
+      font-size: 18px;
+      padding: 10px 20px;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      display: inline-block;
+      background-color: black;
+      box-shadow: 0 0 10px red, 0 0 20px blue, 0 0 30px orange;
+      animation: neonGlow 1.5s infinite alternate;
+      transition: box-shadow 0.3s ease, filter 0.3s ease; /* Smooth hover effect */
+    }
+    .neon-button:hover {
+      box-shadow: 0 0 20px red, 0 0 30px blue, 0 0 40px orange;
+      filter: brightness(1.2); /* Brighten on hover */
+    }
+    @keyframes neonGlow {
+      0% { box-shadow: 0 0 10px red, 0 0 20px blue, 0 0 30px orange; }
+      100% { box-shadow: 0 0 20px orange, 0 0 30px red, 0 0 40px blue; }
+    }
+    .flower {
+      position: relative; /* Ensure it stays at the bottom */
+    }
+    /* Add any necessary styles for positioning here if needed */
+    
+    /* Flower-specific styles should be in your external CSS file */
+    
+</style>
+</head>
+<body>
+<a href="https://localwebhost-jm.github.io/for_ellaiii_the-kupal/" class="neon-button">Pindot Me</a>
+
+<!-- Flower design -->
+<div class="flower">
+   <div class="flower-pp">
+     <div class="flower_l"></div>
+     <div class="f">
+       <div class="leaf leaf--1"></div>
+       <div class="leaf leaf--2"></div>
+       <div class="leaf leaf--3"></div>
+       <div class="leaf leaf--4"></div>
+       <div class="leaf leaf--5"></div>
+       <div class="leaf leaf--6"></div>
+       <div class="leaf leaf--7"></div>
+       <div class="leaf leaf--8 flower__fall-down--yellow"></div>
+     </div>
+   </div>
+
+   <div class="flower-pp flower-pp--2">
+     <div class="flower_l"></div>
+     <div class="f">
+       <div class="leaf leaf--1"></div>
+       <div class="leaf leaf--2"></div>
+       <div class="leaf leaf--3"></div>
+       <div class="leaf leaf--4"></div>
+       <div class="leaf leaf--5"></div>
+       <div class="leaf leaf--6"></div>
+       <div class="leaf leaf--7"></div>
+       <div class="leaf leaf--8 flower__fall-down--pink"></div>
+     </div>
+   </div>
+
+   <div class="flower-pp flower-pp--3">
+     <div class="flower_l"></div>
+     <div class="f">
+       <div class="leaf leaf--1"></div>
+       <div class="leaf leaf--2"></div>
+       <div class="leaf leaf--3"></div>
+       <div class="leaf leaf--4"></div>
+       <div class="leaf leaf--5"></div>
+       <div class="leaf leaf--6"></div>
+       <div class="leaf leaf--7"></div>
+       <div class="leaf leaf--8 flower__fall-down--purple"></div>
+     </div>
+   </div>
+
+   <!-- Optional glass overlay -->
+   <div class="flower__glass"></div>
+   </div>
+</body>
+</html>
